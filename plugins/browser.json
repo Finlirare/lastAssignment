@@ -1,0 +1,43 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-googleplus": {
+      "WEB_APPLICATION_CLIENT_ID": "705830739244-ap66lon7fne6c8v2p558m27i3oslth5a.apps.googleusercontent.com",
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "lastAssig"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.FOURME307.lastAssig"
+    }
+  },
+  "dependent_plugins": {}
+}

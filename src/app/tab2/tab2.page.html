@@ -1,0 +1,28 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-button (click)="showLikes()">Show <ion-icon name="star"></ion-icon> only</ion-button>
+			<ion-button (click)="showAll()">Show all</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+<ion-content>
+	<agm-map [latitude]="lat" [longitude]="lng" [maxZoom]="200">
+		<!--<agm-marker-cluster [imagePath]="'https://raw.githubusercontent.com/googlemaps/v3-utility-library/master/markerclustererplus/images/m'"
+						[minimumClusterSize]="2"
+						[gridSize]="60"
+						>-->
+
+		<agm-marker *ngFor="let mark of markers; let i = index" [latitude]="mark.lat" [longitude]="mark.long">
+			<agm-info-window>
+				<p>{{mark.uploadTime}}</p>
+				<p>{{mark.liked}}</p>
+				<ion-button (click)="star(mark)" slot="icon-only" fill="clear">
+					<ion-icon [name]="mark.icon" class="imgIcon"></ion-icon>
+				</ion-button>
+				<img [attr.data-id]="mark._id" [src]="mark.image" width="200px" />
+			</agm-info-window>
+		</agm-marker>
+		<!--</agm-marker-cluster>-->
+	</agm-map>
+</ion-content>
