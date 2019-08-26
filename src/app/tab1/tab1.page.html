@@ -1,13 +1,4 @@
 <ion-header>
-  <!--<ion-toolbar>
-		<ion-title>
-			Profile 
-		</ion-title>
-
-    	<ion-icon name="settings" (click)="presentPopover()" class="ion-align-self-end">
-		</ion-icon>
-	  </ion-toolbar>
-	  -->
 	<ion-toolbar color="primary">
 		<ion-buttons slot="primary">
 			<ion-button (click)="presentPopover()">
@@ -25,9 +16,6 @@
 		</ion-avatar>
 		<ion-label> {{user.name}}</ion-label>
 	</ion-item>
-	<!--<ion-item>
-		<img [src]="images" alt="You don't have any images yet!" />
-	</ion-item>-->
 	<div id="gallery">
 		<div class="profileImages" *ngFor="let img of images2">
 				<h3 *ngIf="img.length == 0" text-center>No images yet!</h3>
