@@ -5,8 +5,6 @@
 </ion-header>
 <ion-content padding>
     <div class="center" *ngIf="(user | async) || {} as user">
-       <!-- <ion-button *ngIf="!user.uid" (click)="login()"></ion-button>-->
-        <img src="../../assets/icon/btn_google_signin_light_normal_web.png" (click)="login()" />
-        
+        <img src="../../assets/icon/btn_google_signin_light_normal_web.png" (click)="login()" />   
     </div>
 </ion-content>
